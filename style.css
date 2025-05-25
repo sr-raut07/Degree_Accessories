@@ -1,0 +1,64 @@
+/* ----- basic page reset & typography ----- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    padding: 2rem clamp(1rem, 4vw, 4rem);
+    background: #f7f9fc;
+    color: #222;
+}
+
+/* ----- headings ----- */
+h1 {
+    margin: 2rem 0 1rem;
+    color: #004680;
+    font-size: 1.75rem;
+    border-left: 6px solid #004680;
+    padding-left: 0.5rem;
+}
+
+/* ----- ordered lists (subjects) ----- */
+.subject-list {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.subject-list li {
+    margin: 0.5rem 0;
+}
+
+/* ----- links ----- */
+a {
+    color: #0069d9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* optional: visually group the download link */
+.download {
+    margin-top: 2rem;
+}
+
+.download a {
+    display: inline-block;
+    background: #004680;
+    color: #fff;
+    padding: 0.6rem 1.1rem;
+    border-radius: 4px;
+    transition: filter 0.2s ease;
+}
+
+.download a:hover,
+.download a:focus {
+    filter: brightness(1.1);
+}
